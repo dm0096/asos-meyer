@@ -1,0 +1,188 @@
+
+
+
+
+National Climatic Data Center
+
+DATA DOCUMENTATION
+
+FOR
+
+DATA SET 6405 (DSI-6405)
+ASOS SURFACE 1-MINUTE, PAGE 1 DATA
+
+
+July 12, 2006
+
+
+National Climatic Data Center
+151 Patton Ave.
+Asheville, NC  28801-5001  USA
+
+
+
+
+Table of Contents
+
+
+       Topic                                                 Page Number
+
+       1.  Abstract................................................... 3
+
+       2.  Element Names and Definitions: ............................ 3
+
+       3.  Start Date................................................. 4
+
+       4.  Stop Date.................................................. 4
+
+       5.  Coverage................................................... 5
+
+       6.  How to order data.......................................... 5
+
+       7.  Archiving Data Center. .................................... 5
+
+       8.  Technical Contact.......................................... 5
+
+       9.  Known Uncorrected Problems................................. 5
+
+       10. Quality Statement.......................................... 5
+
+       11. Essential Companion Data Sets.............................. 5
+
+       12. References................................................. 5
+
+
+1.   Abstract:  A major part of the NWS modernization effort in the 1990's is the implementation of the Automated Surface Observations System (ASOS).  Data are collected and transmitted automatically.  Several sites will not be manned.  As new sensors are developed to observe additional weather elements (currently not measurable by automatic sensors) they will be implemented.  Some of the elements not currently measured include tornados, thunderstorms, hail, drizzle, blowing obstructions to vision, sunshine, snowfall, snow depth and clouds above 12,000 feet.  
+
+One-minute data are automatically collected and stored on station for 12 hours.  At this writing, the NCDC downloads the one-minute data files via modem. Discussions are underway with NWS to receive these data routinely for as many stations as possible.
+
+The network consists of NWS and FAA ASOS sites, which are expected to number approximately 1200 when fully commissioned.  The number of stations that will ultimately participate in providing one-minute data has not been determined.
+
+One-minute reports are computed from data accumulations over the following time periods prior to the report:
+
+Cloud Height                             30 seconds
+Visibility                                1 minute
+       Photometer						1 minute
+Present Weather                           1 minute
+Freezing Rain                             1 minute
+Temperature/Dew Point                     1 minute
+Wind                                      2 minute Avg.
+Pressure                                  1 minute
+Precipitation Accumulation               15 minute
+       Lightning						1 minute
+
+Page 1 data contains primarily wind data. 
+
+2.   Element Names and Definitions: 
+
+General Information:  Each element is classified as numeric [N] or alphanumeric [A] as indicated after each element name.  Values recorded in numeric elements are right justified with unused positions zero-filled; signed numbers always begin with a "+" or a "-" in the left-most position.  Recorded values in alphanumeric elements are left justified and unused positions are filled with blanks.
+
+Missing and unknown values of numeric elements are generally indicated by all spaces or occasionally "[M]".
+
+WBAN NUMBER [N]
+The WBAN (Weather Bureau, Army, Navy) number is a unique five-digit number assigned by the NCDC.  
+
+ICAO CALL SIGN [A]
+The ICAO Call Sign is a location identifier, four characters in length, and may consist of letters and numbers.  Authority for assignment of numbers is coordinated with the FAA, Dept. of the Navy, Transport Canada, FCC and NWS.  Call signs are left justified in the field.
+
+STATION CALL SIGN [A]
+The Call sign is a location identifier, three or four characters in length, and may consist of letters and numbers.  Authority for assignment of numbers is coordinated with the FAA, Dept. of the Navy, Transport Canada, FCC and NWS. Call signs are left justified in the field.
+
+YEAR [N]
+The four-digit year of the observation with reference to Local Standard Time (LST).
+
+MONTH [N]
+The month of the observation (LST).  The values may be 01 - 12.
+DAY [N]
+The day of the observation (LST).  The values may be 01 - 31.
+
+HOUR [N]
+The hour of the observation (LST).  The hour is recorded on the 24-hour clock system (e.g. 3 am is 03, 3 pm is 15, midnight is 00).  The hours are whole numbers and range from 00 to 23.
+
+MINUTE [N] 
+The minute of the observation.  Observations are recorded on whole five-minute increments.  The values may be 00, 01, 02, 03,...,58, 59.
+
+DATA [A]
+The meteorological data is reproduced as received from the station.  In the case of truncated records, the records are buffered with spaces (" ") to maintain the 99 character fixed length format.
+
+Sample and explanation of ASOS 1-min DSI-6405 (page1).  Some elements remain
+unknown due to lack of complete documentation for this dataset.  Documentation for the obsolete DSI-3285 1-Min ASOS is useful in explaining some of the terms. However, it will not match the output format you have.  See the documentation at http://www1.ncdc.noaa.gov/pub/data/documentlibrary/tddoc/td3285.pdf
+
+Example:
+93721KBWI BWI2003090100080508 0.148 N 0.138 N 153 5 151 6 10 60+
+
+*10 is unknown
+
+Station ID
+WBAN # and 4 letter call signYear MonthDayTime (local, utc)Visib
+Extinc Coeff 
+1st sensor
+N = nightVisib
+Extinc Coeff 
+2nd sensor N = nightDir of 2min avg windSpeed of 2min avg wind
+(knots)Dir of max 5sec avg windSpd of max 
+5sec avg wind
+(knots)Runway visual range
+(hundreds ft)93771 KBWI200309010008 est
+0508 utc0.148 N0.138 N1535151660+
+
+3.   Start Date: Data begin in September 1992 for a limited number of stations and time periods. 
+
+4.   Stop Date: Ongoing.
+
+5.   Coverage: Stations are located in the contiguous United States, Alaska, Hawaii and Puerto Rico.
+
+a. Southernmost Latitude           18N
+b. Northernmost Latitude           72N
+c. Westernmost Longitude          171W
+d. Easternmost Longitude           65W
+
+6.   How to Order Data:
+
+     Ask NCDC’s Climate Services about the cost of obtaining this data set. 
+     Phone: 828-271-4800
+     FAX: 828-271-4876
+     E-mail: NCDC.Orders@noaa.gov
+
+7.   Archiving Data Center:
+
+     National Climatic Data Center 
+     Federal Building 
+     151 Patton Avenue
+     Asheville, NC  28801-5001
+     Phone: (828) 271-4800.   
+
+
+8.   Technical Contact:
+
+     National Climatic Data Center 
+     Federal Building 
+     151 Patton Avenue
+     Asheville, NC  28801-5001
+     Phone: (828) 271-4800.   
+
+9.   Known Uncorrected Problems: None.
+
+10.  Quality Statement: This data set receives limited quality control at the station.  A discussion of quality control procedures for sensors may be found in the ASOS USER'S GUIDE.  No attempt to edit data or correct transmission errors has been made at the NCDC.
+
+11.  Essential Companion Datasets: None.
+
+12.  References: No information provided with original documentation. The ASOS User’s guide gives specifics about the observations, instruments, etc., but not this code.
+
+
+
+
+
+:
+
+
+:
+2:
+:
+
+
+:
+5:
+:
+
+
